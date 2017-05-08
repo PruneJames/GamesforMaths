@@ -1,0 +1,23 @@
+a.scrolling:link, a.scrolling:visited {
+    background-color: red;
+    color: white;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+a.scrolling:hover, a.scrolling:active {
+    background-color: black;
+    color: white;
+}
+
+marquee {
+    behavior="scroll";
+    align="middle";
+    direction="left";
+    scrollamount="4";
+    onmouseover="this.stop()";
+    onmouseout="this.start()";
+}
